@@ -105,7 +105,7 @@ def last_five(input_list):
 
     """
 
-    return []
+    return input_list[-5:]  # slice starting from five elements before the end of list
 
 
 def middle(input_list):
