@@ -133,7 +133,7 @@ def inner_four(input_list):
 
     """
 
-    return input_list[2:7]
+    return input_list[2:6]
 
 
 def inner_four_end(input_list):
