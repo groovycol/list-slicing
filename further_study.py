@@ -170,7 +170,7 @@ def custom_reverse(input_list):
     """
     #question on this one, it works, but doesn't return expected value of True?
     input_list = input_list[::-1]
-    print input_list
+    #print input_list
 
 
 def custom_contains(input_list, value):
