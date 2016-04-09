@@ -148,8 +148,11 @@ def custom_count(input_list, value):
     2
 
     """
-
-    return 0
+    count = 0
+    for item in input_list:
+        if item == value:
+            count += 1
+    return count
 
 
 def custom_reverse(input_list):
@@ -165,8 +168,9 @@ def custom_reverse(input_list):
     True
 
     """
-
-    pass
+    #question on this one, it works, but doesn't return expected value of True?
+    input_list = input_list[::-1]
+    print input_list
 
 
 def custom_contains(input_list, value):
@@ -185,7 +189,15 @@ def custom_contains(input_list, value):
 
     """
 
-    return None
+    return_value = None
+    for item in input_list:
+        if item == value:
+            return_value = True
+            break
+    if return_value == True:
+        return True
+    else:
+        return False
 
 
 def custom_equality(some_list, another_list):
